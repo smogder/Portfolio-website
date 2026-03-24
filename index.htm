@@ -1,25 +1,126 @@
 <!DOCTYPE html>
 <html lang="en" data-theme="dark">
+
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Sanidhya Makasare | .NET Full Stack Developer</title>
-  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,600;1,300;1,400&family=DM+Sans:wght@300;400;500&family=Fira+Code:wght@400;500&display=swap" rel="stylesheet"/>
+  <link
+    href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,600;1,300;1,400&family=DM+Sans:wght@300;400;500&family=Fira+Code:wght@400;500&display=swap"
+    rel="stylesheet" />
+
   <meta name="google-site-verification" content="ag57oCR_-2TqNDfOMr-4ak8cb9tNPHyvrKUwNgELhRY" />
 
+  <meta name="description"
+    content="Sanidhya Makasare is a .NET Full Stack Developer building scalable ASP.NET Core APIs, SQL Server backends, and Angular frontends with clean architecture." />
+  <link rel="canonical" href="https://smogder.github.io/" />
+
+  <meta property="og:type" content="website" />
+  <meta property="og:title" content="Sanidhya Makasare | .NET Full Stack Developer" />
+  <meta property="og:description"
+    content="ASP.NET Core, EF Core, SQL Server, Angular, and real-world ERP development." />
+  <meta property="og:url" content="https://smogder.github.io/" />
+  <meta property="og:image" content="https://smogder.github.io/assets/og-image.jpg" />
+
+  <meta name="twitter:card" content="summary_large_image" />
+  <meta name="twitter:title" content="Sanidhya Makasare | .NET Full Stack Developer" />
+  <meta name="twitter:description"
+    content="ASP.NET Core, EF Core, SQL Server, Angular, and real-world ERP development." />
+  <meta name="twitter:image" content="https://smogder.github.io/assets/og-image.jpg" />
+
+  <script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@graph": [
+    {
+      "@type": "WebSite",
+      "@id": "https://smogder.github.io/#website",
+      "url": "https://smogder.github.io/",
+      "name": "Sanidhya Makasare Portfolio",
+      "inLanguage": "en"
+    },
+    {
+      "@type": "WebPage",
+      "@id": "https://smogder.github.io/#webpage",
+      "url": "https://smogder.github.io/",
+      "name": "Sanidhya Makasare | .NET Full Stack Developer",
+      "isPartOf": {
+        "@id": "https://smogder.github.io/#website"
+      },
+      "about": {
+        "@id": "https://smogder.github.io/#person"
+      },
+      "description": "Sanidhya Makasare is a .NET Full Stack Developer building scalable ASP.NET Core APIs, SQL Server backends, and Angular frontends with clean architecture.",
+      "inLanguage": "en"
+    },
+    {
+      "@type": "Person",
+      "@id": "https://smogder.github.io/#person",
+      "name": "Sanidhya Makasare",
+      "url": "https://smogder.github.io/",
+      "image": "https://smogder.github.io/assets/profile.jpg",
+      "jobTitle": ".NET Full Stack Developer",
+      "description": ".NET Full Stack Developer focused on ASP.NET Core, Entity Framework Core, SQL Server, and Angular.",
+      "email": "mailto:makasareworks@gmail.com",
+      "knowsLanguage": ["en", "hi", "gu", "mr", "de"],
+      "address": {
+        "@type": "PostalAddress",
+        "addressLocality": "Vadodara",
+        "addressCountry": "IN"
+      },
+      "sameAs": [
+        "https://github.com/smogder",
+        "https://www.linkedin.com/in/sanidhya-makasare",
+        "https://smogder.github.io/cover-letter"
+      ],
+      "knowsAbout": [
+        "C#",
+        "ASP.NET Core",
+        "Entity Framework Core",
+        "SQL Server",
+        "Angular",
+        "REST API Development",
+        "RBAC",
+        "Layered Architecture"
+      ]
+    }
+  ]
+}
+</script>
+
   <style>
-    *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
-    html { scroll-behavior: smooth; }
+    *,
+    *::before,
+    *::after {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+    }
+
+    html {
+      scroll-behavior: smooth;
+    }
 
     [data-theme="dark"] {
-      --bg: #0e1117; --surface: #131820; --ink: #f0ece4;
-      --muted: #7a7268; --accent: #b8965a; --rule: #1f2533;
-      --card: #10141c; --chip-bg: #1a2030;
+      --bg: #0e1117;
+      --surface: #131820;
+      --ink: #f0ece4;
+      --muted: #7a7268;
+      --accent: #b8965a;
+      --rule: #1f2533;
+      --card: #10141c;
+      --chip-bg: #1a2030;
     }
+
     [data-theme="light"] {
-      --bg: #f6f3ee; --surface: #ede9e2; --ink: #0e1117;
-      --muted: #7a7268; --accent: #b8965a; --rule: #d6d0c6;
-      --card: #ffffff; --chip-bg: #e8e3da;
+      --bg: #f6f3ee;
+      --surface: #ede9e2;
+      --ink: #0e1117;
+      --muted: #7a7268;
+      --accent: #b8965a;
+      --rule: #d6d0c6;
+      --card: #ffffff;
+      --chip-bg: #e8e3da;
     }
 
     body {
@@ -48,23 +149,41 @@
       background-size: 3px 3px;
     }
 
-    ::-webkit-scrollbar { width: 3px; }
-    ::-webkit-scrollbar-track { background: var(--bg); }
-    ::-webkit-scrollbar-thumb { background: var(--accent); border-radius: 2px; }
+    ::-webkit-scrollbar {
+      width: 3px;
+    }
+
+    ::-webkit-scrollbar-track {
+      background: var(--bg);
+    }
+
+    ::-webkit-scrollbar-thumb {
+      background: var(--accent);
+      border-radius: 2px;
+    }
 
     /* CUSTOM CURSOR */
     #cursor {
-      position: fixed; width: 8px; height: 8px;
-      background: var(--accent); border-radius: 50%;
-      pointer-events: none; z-index: 9999;
+      position: fixed;
+      width: 8px;
+      height: 8px;
+      background: var(--accent);
+      border-radius: 50%;
+      pointer-events: none;
+      z-index: 9999;
       transform: translate(-50%, -50%);
       transition: transform .1s, width .2s, height .2s, opacity .2s;
       opacity: .9;
     }
+
     #cursor-ring {
-      position: fixed; width: 30px; height: 30px;
-      border: 1px solid var(--accent); border-radius: 50%;
-      pointer-events: none; z-index: 9998;
+      position: fixed;
+      width: 30px;
+      height: 30px;
+      border: 1px solid var(--accent);
+      border-radius: 50%;
+      pointer-events: none;
+      z-index: 9998;
       transform: translate(-50%, -50%);
       transition: transform .12s ease-out, width .2s, height .2s, opacity .3s;
       opacity: .35;
@@ -72,49 +191,101 @@
 
     /* NAV */
     nav {
-      position: fixed; top: 0; left: 0; right: 0; z-index: 100;
-      display: flex; justify-content: space-between; align-items: center;
+      position: fixed;
+      top: 0;
+      left: 0;
+      right: 0;
+      z-index: 100;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
       padding: 20px 52px;
       transition: backdrop-filter .4s, background .4s, padding .3s, border-color .3s;
       border-bottom: 1px solid transparent;
     }
+
     nav.scrolled {
       background: color-mix(in srgb, var(--bg) 93%, transparent);
       backdrop-filter: blur(10px);
       border-bottom: 1px solid color-mix(in srgb, var(--rule) 70%, transparent);
       padding: 14px 52px;
     }
+
     .nav-logo {
       font-family: 'Cormorant Garamond', serif;
-      font-size: 1.5rem; font-weight: 600;
-      color: var(--accent); text-decoration: none;
+      font-size: 1.5rem;
+      font-weight: 600;
+      color: var(--accent);
+      text-decoration: none;
       letter-spacing: -.3px;
     }
-    .nav-links { display: flex; gap: 36px; align-items: center; list-style: none; }
-    .nav-links a {
-      color: var(--muted); text-decoration: none;
-      font-size: .72rem; letter-spacing: .16em; text-transform: uppercase;
-      font-weight: 500; transition: color .2s;
+
+    .nav-links {
+      display: flex;
+      gap: 36px;
+      align-items: center;
+      list-style: none;
     }
-    .nav-links a:hover { color: var(--accent); }
+
+    .nav-links a {
+      color: var(--muted);
+      text-decoration: none;
+      font-size: .72rem;
+      letter-spacing: .16em;
+      text-transform: uppercase;
+      font-weight: 500;
+      transition: color .2s;
+    }
+
+    .nav-links a:hover {
+      color: var(--accent);
+    }
+
     .theme-toggle {
-      background: none; border: 1px solid var(--rule); color: var(--ink);
-      cursor: none; width: 36px; height: 36px; border-radius: 50%;
-      font-size: .9rem; display: flex; align-items: center; justify-content: center;
+      background: none;
+      border: 1px solid var(--rule);
+      color: var(--ink);
+      cursor: none;
+      width: 36px;
+      height: 36px;
+      border-radius: 50%;
+      font-size: .9rem;
+      display: flex;
+      align-items: center;
+      justify-content: center;
       transition: .2s;
     }
-    .theme-toggle:hover { border-color: var(--accent); }
-    .hamburger {
-      display: none; background: none; border: none;
-      color: var(--ink); cursor: none; flex-direction: column; gap: 5px;
+
+    .theme-toggle:hover {
+      border-color: var(--accent);
     }
-    .hamburger span { display: block; width: 22px; height: 2px; background: var(--ink); border-radius: 2px; transition: .3s; }
+
+    .hamburger {
+      display: none;
+      background: none;
+      border: none;
+      color: var(--ink);
+      cursor: none;
+      flex-direction: column;
+      gap: 5px;
+    }
+
+    .hamburger span {
+      display: block;
+      width: 22px;
+      height: 2px;
+      background: var(--ink);
+      border-radius: 2px;
+      transition: .3s;
+    }
 
     /* HERO */
     #hero {
       position: relative;
       min-height: 86vh;
-      display: flex; align-items: center; justify-content: center;
+      display: flex;
+      align-items: center;
+      justify-content: center;
       overflow: hidden;
       padding-top: 72px;
       padding-bottom: 36px;
@@ -123,81 +294,157 @@
     }
 
     .hero-content {
-      position: relative; z-index: 2;
-      text-align: center; padding: 0 24px;
+      position: relative;
+      z-index: 2;
+      text-align: center;
+      padding: 0 24px;
     }
 
     .hero-eyebrow {
-      font-size: .72rem; letter-spacing: .28em; text-transform: uppercase;
-      color: var(--accent); font-weight: 500; margin-bottom: 22px;
-      opacity: 0; animation: fadeUp .75s .15s forwards;
+      font-size: .72rem;
+      letter-spacing: .28em;
+      text-transform: uppercase;
+      color: var(--accent);
+      font-weight: 500;
+      margin-bottom: 22px;
+      opacity: 0;
+      animation: fadeUp .75s .15s forwards;
     }
+
     .hero-name {
       font-family: 'Cormorant Garamond', serif;
       font-size: clamp(3.2rem, 9vw, 7rem);
-      font-weight: 600; line-height: .9;
-      letter-spacing: -2px; margin-bottom: 20px;
-      opacity: 0; animation: fadeUp .8s .3s forwards;
+      font-weight: 600;
+      line-height: .9;
+      letter-spacing: -2px;
+      margin-bottom: 20px;
+      opacity: 0;
+      animation: fadeUp .8s .3s forwards;
     }
-    .hero-name span { color: var(--accent); }
+
+    .hero-name span {
+      color: var(--accent);
+    }
+
     .hero-role {
       font-size: clamp(.9rem, 2vw, 1.1rem);
-      font-weight: 300; color: var(--muted); margin-bottom: 12px;
-      opacity: 0; animation: fadeUp .75s .45s forwards;
+      font-weight: 300;
+      color: var(--muted);
+      margin-bottom: 12px;
+      opacity: 0;
+      animation: fadeUp .75s .45s forwards;
     }
+
     .hero-tagline {
       font-family: 'Cormorant Garamond', serif;
-      font-style: italic; font-size: clamp(.95rem, 1.8vw, 1.12rem);
-      color: var(--ink); opacity: 0;
-      max-width: 760px; margin: 0 auto 34px;
+      font-style: italic;
+      font-size: clamp(.95rem, 1.8vw, 1.12rem);
+      color: var(--ink);
+      opacity: 0;
+      max-width: 760px;
+      margin: 0 auto 34px;
       animation: fadeUp .75s .58s forwards;
     }
 
     .hero-cta {
-      display: flex; gap: 14px; justify-content: center; flex-wrap: wrap;
-      opacity: 0; animation: fadeUp .75s .7s forwards;
+      display: flex;
+      gap: 14px;
+      justify-content: center;
+      flex-wrap: wrap;
+      opacity: 0;
+      animation: fadeUp .75s .7s forwards;
     }
+
     .btn {
-      display: inline-block; padding: 13px 28px;
-      font-size: .75rem; font-weight: 500;
-      letter-spacing: .14em; text-transform: uppercase;
-      text-decoration: none; border-radius: 2px;
-      cursor: none; transition: .25s; border: none;
+      display: inline-block;
+      padding: 13px 28px;
+      font-size: .75rem;
+      font-weight: 500;
+      letter-spacing: .14em;
+      text-transform: uppercase;
+      text-decoration: none;
+      border-radius: 2px;
+      cursor: none;
+      transition: .25s;
+      border: none;
     }
-    .btn-primary { background: var(--accent); color: #0e1117; }
-    .btn-primary:hover { opacity: .9; transform: translateY(-1px); }
-    .btn-outline { background: transparent; color: var(--ink); border: 1px solid var(--rule); }
-    .btn-outline:hover { border-color: var(--accent); color: var(--accent); transform: translateY(-1px); }
+
+    .btn-primary {
+      background: var(--accent);
+      color: #0e1117;
+    }
+
+    .btn-primary:hover {
+      opacity: .9;
+      transform: translateY(-1px);
+    }
+
+    .btn-outline {
+      background: transparent;
+      color: var(--ink);
+      border: 1px solid var(--rule);
+    }
+
+    .btn-outline:hover {
+      border-color: var(--accent);
+      color: var(--accent);
+      transform: translateY(-1px);
+    }
 
     .scroll-hint {
-      position: absolute; bottom: 30px; left: 50%; transform: translateX(-50%);
-      display: flex; flex-direction: column; align-items: center;
-      gap: 8px; opacity: .35; animation: bounce 2.5s infinite;
+      position: absolute;
+      bottom: 30px;
+      left: 50%;
+      transform: translateX(-50%);
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      gap: 8px;
+      opacity: .35;
+      animation: bounce 2.5s infinite;
       z-index: 2;
     }
-    .scroll-hint span { font-size: .62rem; letter-spacing: .22em; text-transform: uppercase; color: var(--muted); }
-    .scroll-line { width: 1px; height: 44px; background: linear-gradient(to bottom, var(--accent), transparent); }
+
+    .scroll-hint span {
+      font-size: .62rem;
+      letter-spacing: .22em;
+      text-transform: uppercase;
+      color: var(--muted);
+    }
+
+    .scroll-line {
+      width: 1px;
+      height: 44px;
+      background: linear-gradient(to bottom, var(--accent), transparent);
+    }
 
     /* PROFILE */
     .pfp-wrap {
       position: relative;
-      width: 132px; height: 132px;
+      width: 132px;
+      height: 132px;
       margin: 0 auto 20px;
-      opacity: 0; animation: fadeUp .8s .2s forwards;
+      opacity: 0;
+      animation: fadeUp .8s .2s forwards;
     }
+
     .pfp-wrap img {
-      width: 132px; height: 132px;
+      width: 132px;
+      height: 132px;
       border-radius: 50%;
       object-fit: cover;
       object-position: center 20%;
-      position: relative; z-index: 2;
+      position: relative;
+      z-index: 2;
       border: 1px solid color-mix(in srgb, var(--accent) 35%, transparent);
-      box-shadow: 0 10px 30px rgba(0,0,0,.35);
+      box-shadow: 0 10px 30px rgba(0, 0, 0, .35);
       background: #1b2230;
       transition: border-color .3s;
     }
+
     .pfp-ring {
-      position: absolute; inset: -6px;
+      position: absolute;
+      inset: -6px;
       border-radius: 50%;
       background: conic-gradient(from 0deg, var(--accent), transparent 60%, var(--accent));
       opacity: .22;
@@ -205,50 +452,146 @@
       animation: spinRing 4s linear infinite;
       z-index: 1;
     }
-    .pfp-wrap:hover .pfp-ring { opacity: .55; }
-    .pfp-wrap:hover img { border-color: var(--accent); }
+
+    .pfp-wrap:hover .pfp-ring {
+      opacity: .55;
+    }
+
+    .pfp-wrap:hover img {
+      border-color: var(--accent);
+    }
 
     /* SECTIONS */
-    section { padding: 100px 24px; }
-    .container { max-width: 1020px; margin: 0 auto; }
-    .section-header { margin-bottom: 64px; display: flex; align-items: center; gap: 18px; }
-    .section-num { font-family: 'Fira Code', monospace; font-size: .72rem; color: var(--accent); opacity: .5; }
-    .section-title { font-family: 'Cormorant Garamond', serif; font-size: clamp(2rem, 4vw, 3rem); font-weight: 600; line-height: 1; }
-    .section-line { flex: 1; height: 1px; background: linear-gradient(to right, var(--rule), transparent); }
+    section {
+      padding: 100px 24px;
+    }
 
-    .reveal { opacity: 0; transform: translateY(16px); transition: opacity .5s ease, transform .5s ease; }
-    .reveal.visible { opacity: 1; transform: none; }
+    .container {
+      max-width: 1020px;
+      margin: 0 auto;
+    }
+
+    .section-header {
+      margin-bottom: 64px;
+      display: flex;
+      align-items: center;
+      gap: 18px;
+    }
+
+    .section-num {
+      font-family: 'Fira Code', monospace;
+      font-size: .72rem;
+      color: var(--accent);
+      opacity: .5;
+    }
+
+    .section-title {
+      font-family: 'Cormorant Garamond', serif;
+      font-size: clamp(2rem, 4vw, 3rem);
+      font-weight: 600;
+      line-height: 1;
+    }
+
+    .section-line {
+      flex: 1;
+      height: 1px;
+      background: linear-gradient(to right, var(--rule), transparent);
+    }
+
+    .reveal {
+      opacity: 0;
+      transform: translateY(16px);
+      transition: opacity .5s ease, transform .5s ease;
+    }
+
+    .reveal.visible {
+      opacity: 1;
+      transform: none;
+    }
 
     /* Unified background sections */
-    #about, #projects, #skills, #contact {
+    #about,
+    #projects,
+    #skills,
+    #contact {
       background: transparent;
     }
 
     /* ABOUT */
-    .about-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 72px; align-items: start; }
-    .about-bio p { margin-bottom: 20px; line-height: 1.82; color: color-mix(in srgb, var(--ink) 76%, var(--muted)); }
-    .about-bio p strong { color: var(--ink); font-weight: 500; }
+    .about-grid {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 72px;
+      align-items: start;
+    }
+
+    .about-bio p {
+      margin-bottom: 20px;
+      line-height: 1.82;
+      color: color-mix(in srgb, var(--ink) 76%, var(--muted));
+    }
+
+    .about-bio p strong {
+      color: var(--ink);
+      font-weight: 500;
+    }
+
     .about-quote {
       font-family: 'Cormorant Garamond', serif;
-      font-style: italic; font-size: 1.15rem;
-      color: var(--ink); border-left: 3px solid var(--accent);
-      padding-left: 20px; margin: 28px 0; line-height: 1.65;
+      font-style: italic;
+      font-size: 1.15rem;
+      color: var(--ink);
+      border-left: 3px solid var(--accent);
+      padding-left: 20px;
+      margin: 28px 0;
+      line-height: 1.65;
     }
+
     .about-facts {
-      display: flex; flex-direction: column;
+      display: flex;
+      flex-direction: column;
       background: color-mix(in srgb, var(--card) 82%, transparent);
       backdrop-filter: blur(2px);
       border: 1px solid var(--rule);
       border-radius: 3px;
       padding: 6px 18px;
     }
-    .fact-row { display: flex; padding: 16px 0; border-bottom: 1px solid var(--rule); gap: 16px; align-items: baseline; }
-    .fact-row:last-child { border-bottom: none; }
-    .fact-label { font-size: .68rem; letter-spacing: .18em; text-transform: uppercase; color: var(--accent); font-weight: 500; min-width: 110px; flex-shrink: 0; }
-    .fact-value { font-size: .88rem; color: color-mix(in srgb, var(--ink) 76%, var(--muted)); line-height: 1.6; }
+
+    .fact-row {
+      display: flex;
+      padding: 16px 0;
+      border-bottom: 1px solid var(--rule);
+      gap: 16px;
+      align-items: baseline;
+    }
+
+    .fact-row:last-child {
+      border-bottom: none;
+    }
+
+    .fact-label {
+      font-size: .68rem;
+      letter-spacing: .18em;
+      text-transform: uppercase;
+      color: var(--accent);
+      font-weight: 500;
+      min-width: 110px;
+      flex-shrink: 0;
+    }
+
+    .fact-value {
+      font-size: .88rem;
+      color: color-mix(in srgb, var(--ink) 76%, var(--muted));
+      line-height: 1.6;
+    }
 
     /* SKILLS */
-    .skills-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(280px, 1fr)); gap: 20px; }
+    .skills-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+      gap: 20px;
+    }
+
     .skill-card {
       background: color-mix(in srgb, var(--card) 82%, transparent);
       backdrop-filter: blur(2px);
@@ -257,130 +600,489 @@
       border-radius: 3px;
       transition: border-color .25s, transform .25s;
     }
-    .skill-card:hover { border-color: var(--accent); transform: translateY(-2px); }
-    .skill-card-title { font-size: .65rem; letter-spacing: .22em; text-transform: uppercase; color: var(--accent); margin-bottom: 18px; font-weight: 500; }
-    .skill-chips { display: flex; flex-wrap: wrap; gap: 7px; }
-    .s-chip { background: var(--chip-bg); color: var(--ink); font-size: .68rem; font-weight: 500; letter-spacing: .07em; padding: 5px 12px; border-radius: 2px; border: 1px solid var(--rule); font-family: 'Fira Code', monospace; transition: border-color .2s, color .2s; }
-    .s-chip:hover { border-color: var(--accent); color: var(--accent); }
+
+    .skill-card:hover {
+      border-color: var(--accent);
+      transform: translateY(-2px);
+    }
+
+    .skill-card-title {
+      font-size: .65rem;
+      letter-spacing: .22em;
+      text-transform: uppercase;
+      color: var(--accent);
+      margin-bottom: 18px;
+      font-weight: 500;
+    }
+
+    .skill-chips {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 7px;
+    }
+
+    .s-chip {
+      background: var(--chip-bg);
+      color: var(--ink);
+      font-size: .68rem;
+      font-weight: 500;
+      letter-spacing: .07em;
+      padding: 5px 12px;
+      border-radius: 2px;
+      border: 1px solid var(--rule);
+      font-family: 'Fira Code', monospace;
+      transition: border-color .2s, color .2s;
+    }
+
+    .s-chip:hover {
+      border-color: var(--accent);
+      color: var(--accent);
+    }
 
     .arch-box {
       background: color-mix(in srgb, var(--card) 82%, transparent);
       backdrop-filter: blur(2px);
       border: 1px solid var(--rule);
-      border-radius: 3px; padding: 36px; margin-top: 48px;
+      border-radius: 3px;
+      padding: 36px;
+      margin-top: 48px;
     }
-    .arch-flow { display: flex; align-items: center; flex-wrap: wrap; justify-content: center; margin-bottom: 20px; }
-    .arch-node { background: var(--chip-bg); border: 1px solid var(--accent); color: var(--accent); font-family: 'Fira Code', monospace; font-size: .8rem; padding: 10px 22px; border-radius: 2px; font-weight: 500; }
-    .arch-arrow { color: var(--muted); font-size: 1.1rem; padding: 0 10px; }
-    .arch-desc { font-family: 'Cormorant Garamond', serif; font-style: italic; font-size: 1rem; color: var(--muted); text-align: center; }
+
+    .arch-flow {
+      display: flex;
+      align-items: center;
+      flex-wrap: wrap;
+      justify-content: center;
+      margin-bottom: 20px;
+    }
+
+    .arch-node {
+      background: var(--chip-bg);
+      border: 1px solid var(--accent);
+      color: var(--accent);
+      font-family: 'Fira Code', monospace;
+      font-size: .8rem;
+      padding: 10px 22px;
+      border-radius: 2px;
+      font-weight: 500;
+    }
+
+    .arch-arrow {
+      color: var(--muted);
+      font-size: 1.1rem;
+      padding: 0 10px;
+    }
+
+    .arch-desc {
+      font-family: 'Cormorant Garamond', serif;
+      font-style: italic;
+      font-size: 1rem;
+      color: var(--muted);
+      text-align: center;
+    }
 
     /* PROJECTS */
-    .projects-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 24px; }
+    .projects-grid {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 24px;
+    }
+
     .project-card {
       background: color-mix(in srgb, var(--card) 82%, transparent);
       backdrop-filter: blur(2px);
       border: 1px solid var(--rule);
       border-radius: 3px;
       padding: 36px;
-      display: flex; flex-direction: column; gap: 16px;
+      display: flex;
+      flex-direction: column;
+      gap: 16px;
       transition: border-color .25s, transform .3s;
-      position: relative; overflow: hidden;
+      position: relative;
+      overflow: hidden;
     }
-    .project-card::before {
-      content: ''; position: absolute; top: 0; left: 0; right: 0; height: 2px;
-      background: linear-gradient(to right, var(--accent), transparent);
-      opacity: 0; transition: opacity .3s;
-    }
-    .project-card:hover { border-color: var(--accent); transform: translateY(-2px); }
-    .project-card:hover::before { opacity: 1; }
 
-    .project-status { display: inline-flex; align-items: center; gap: 7px; font-size: .65rem; letter-spacing: .15em; text-transform: uppercase; color: var(--accent); font-weight: 500; }
-    .status-dot { width: 6px; height: 6px; border-radius: 50%; background: var(--accent); }
-    .status-dot.pulse { animation: pulse 1.6s infinite; }
-    .project-title { font-family: 'Cormorant Garamond', serif; font-size: 1.65rem; font-weight: 600; line-height: 1.1; }
-    .project-desc { font-size: .88rem; line-height: 1.75; color: color-mix(in srgb, var(--ink) 76%, var(--muted)); }
-    .project-highlights { list-style: none; }
-    .project-highlights li { font-size: .84rem; padding: 5px 0 5px 16px; position: relative; color: color-mix(in srgb, var(--ink) 76%, var(--muted)); }
-    .project-highlights li::before { content: '▸'; position: absolute; left: 0; color: var(--accent); font-size: .7rem; }
-    .project-stack { display: flex; flex-wrap: wrap; gap: 6px; }
-    .stack-tag { font-family: 'Fira Code', monospace; font-size: .65rem; color: var(--accent); border: 1px solid color-mix(in srgb, var(--accent) 30%, transparent); padding: 3px 10px; border-radius: 2px; }
-    .project-link { display: inline-flex; align-items: center; gap: 8px; color: var(--accent); text-decoration: none; font-size: .73rem; font-weight: 500; letter-spacing: .1em; text-transform: uppercase; margin-top: auto; transition: gap .2s; }
-    .project-link:hover { gap: 14px; }
+    .project-card::before {
+      content: '';
+      position: absolute;
+      top: 0;
+      left: 0;
+      right: 0;
+      height: 2px;
+      background: linear-gradient(to right, var(--accent), transparent);
+      opacity: 0;
+      transition: opacity .3s;
+    }
+
+    .project-card:hover {
+      border-color: var(--accent);
+      transform: translateY(-2px);
+    }
+
+    .project-card:hover::before {
+      opacity: 1;
+    }
+
+    .project-status {
+      display: inline-flex;
+      align-items: center;
+      gap: 7px;
+      font-size: .65rem;
+      letter-spacing: .15em;
+      text-transform: uppercase;
+      color: var(--accent);
+      font-weight: 500;
+    }
+
+    .status-dot {
+      width: 6px;
+      height: 6px;
+      border-radius: 50%;
+      background: var(--accent);
+    }
+
+    .status-dot.pulse {
+      animation: pulse 1.6s infinite;
+    }
+
+    .project-title {
+      font-family: 'Cormorant Garamond', serif;
+      font-size: 1.65rem;
+      font-weight: 600;
+      line-height: 1.1;
+    }
+
+    .project-desc {
+      font-size: .88rem;
+      line-height: 1.75;
+      color: color-mix(in srgb, var(--ink) 76%, var(--muted));
+    }
+
+    .project-highlights {
+      list-style: none;
+    }
+
+    .project-highlights li {
+      font-size: .84rem;
+      padding: 5px 0 5px 16px;
+      position: relative;
+      color: color-mix(in srgb, var(--ink) 76%, var(--muted));
+    }
+
+    .project-highlights li::before {
+      content: '▸';
+      position: absolute;
+      left: 0;
+      color: var(--accent);
+      font-size: .7rem;
+    }
+
+    .project-stack {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 6px;
+    }
+
+    .stack-tag {
+      font-family: 'Fira Code', monospace;
+      font-size: .65rem;
+      color: var(--accent);
+      border: 1px solid color-mix(in srgb, var(--accent) 30%, transparent);
+      padding: 3px 10px;
+      border-radius: 2px;
+    }
+
+    .project-link {
+      display: inline-flex;
+      align-items: center;
+      gap: 8px;
+      color: var(--accent);
+      text-decoration: none;
+      font-size: .73rem;
+      font-weight: 500;
+      letter-spacing: .1em;
+      text-transform: uppercase;
+      margin-top: auto;
+      transition: gap .2s;
+    }
+
+    .project-link:hover {
+      gap: 14px;
+    }
 
     /* CONTACT */
-    .contact-wrapper { display: grid; grid-template-columns: 1fr 1.4fr; gap: 64px; align-items: start; }
-    .contact-info h3 { font-family: 'Cormorant Garamond', serif; font-size: 1.8rem; font-weight: 600; margin-bottom: 16px; }
-    .contact-info p { margin-bottom: 36px; line-height: 1.9; color: color-mix(in srgb, var(--ink) 76%, var(--muted)); }
-    .contact-links { display: flex; flex-direction: column; gap: 14px; }
-    .contact-link { display: flex; align-items: center; gap: 14px; color: var(--muted); text-decoration: none; font-size: .84rem; transition: color .2s; }
-    .contact-link:hover { color: var(--accent); }
-    .contact-link-icon { width: 36px; height: 36px; border: 1px solid var(--rule); border-radius: 2px; display: flex; align-items: center; justify-content: center; font-size: .9rem; transition: border-color .2s; flex-shrink: 0; }
-    .contact-link:hover .contact-link-icon { border-color: var(--accent); }
+    .contact-wrapper {
+      display: grid;
+      grid-template-columns: 1fr 1.4fr;
+      gap: 64px;
+      align-items: start;
+    }
+
+    .contact-info h3 {
+      font-family: 'Cormorant Garamond', serif;
+      font-size: 1.8rem;
+      font-weight: 600;
+      margin-bottom: 16px;
+    }
+
+    .contact-info p {
+      margin-bottom: 36px;
+      line-height: 1.9;
+      color: color-mix(in srgb, var(--ink) 76%, var(--muted));
+    }
+
+    .contact-links {
+      display: flex;
+      flex-direction: column;
+      gap: 14px;
+    }
+
+    .contact-link {
+      display: flex;
+      align-items: center;
+      gap: 14px;
+      color: var(--muted);
+      text-decoration: none;
+      font-size: .84rem;
+      transition: color .2s;
+    }
+
+    .contact-link:hover {
+      color: var(--accent);
+    }
+
+    .contact-link-icon {
+      width: 36px;
+      height: 36px;
+      border: 1px solid var(--rule);
+      border-radius: 2px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-size: .9rem;
+      transition: border-color .2s;
+      flex-shrink: 0;
+    }
+
+    .contact-link:hover .contact-link-icon {
+      border-color: var(--accent);
+    }
 
     .contact-form {
-      display: flex; flex-direction: column; gap: 18px;
+      display: flex;
+      flex-direction: column;
+      gap: 18px;
       background: color-mix(in srgb, var(--card) 82%, transparent);
       backdrop-filter: blur(2px);
       border: 1px solid var(--rule);
       border-radius: 3px;
       padding: 24px;
     }
-    .form-group { display: flex; flex-direction: column; gap: 6px; }
-    .form-row { display: grid; grid-template-columns: 1fr 1fr; gap: 18px; }
-    .form-group label { font-size: .66rem; letter-spacing: .2em; text-transform: uppercase; color: var(--accent); font-weight: 500; }
-    .form-group input, .form-group textarea, .form-group select {
-      background: var(--card); border: 1px solid var(--rule); color: var(--ink);
-      font-family: 'DM Sans', sans-serif; font-size: .9rem;
-      padding: 12px 16px; border-radius: 2px; outline: none;
-      transition: border-color .2s; resize: none;
+
+    .form-group {
+      display: flex;
+      flex-direction: column;
+      gap: 6px;
     }
-    .form-group input:focus, .form-group textarea:focus, .form-group select:focus { border-color: var(--accent); }
-    .form-group input::placeholder, .form-group textarea::placeholder { color: var(--muted); }
+
+    .form-row {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 18px;
+    }
+
+    .form-group label {
+      font-size: .66rem;
+      letter-spacing: .2em;
+      text-transform: uppercase;
+      color: var(--accent);
+      font-weight: 500;
+    }
+
+    .form-group input,
+    .form-group textarea,
+    .form-group select {
+      background: var(--card);
+      border: 1px solid var(--rule);
+      color: var(--ink);
+      font-family: 'DM Sans', sans-serif;
+      font-size: .9rem;
+      padding: 12px 16px;
+      border-radius: 2px;
+      outline: none;
+      transition: border-color .2s;
+      resize: none;
+    }
+
+    .form-group input:focus,
+    .form-group textarea:focus,
+    .form-group select:focus {
+      border-color: var(--accent);
+    }
+
+    .form-group input::placeholder,
+    .form-group textarea::placeholder {
+      color: var(--muted);
+    }
 
     .form-submit {
-      background: var(--accent); color: #0e1117; border: none;
-      font-family: 'DM Sans', sans-serif; font-size: .75rem; font-weight: 500;
-      letter-spacing: .16em; text-transform: uppercase;
-      padding: 14px 32px; border-radius: 2px; cursor: none;
-      transition: opacity .2s, transform .2s; align-self: flex-start;
+      background: var(--accent);
+      color: #0e1117;
+      border: none;
+      font-family: 'DM Sans', sans-serif;
+      font-size: .75rem;
+      font-weight: 500;
+      letter-spacing: .16em;
+      text-transform: uppercase;
+      padding: 14px 32px;
+      border-radius: 2px;
+      cursor: none;
+      transition: opacity .2s, transform .2s;
+      align-self: flex-start;
     }
-    .form-submit:hover { opacity: .9; transform: translateY(-1px); }
-    .form-success { display: none; background: color-mix(in srgb, var(--accent) 10%, transparent); border: 1px solid var(--accent); color: var(--accent); padding: 16px 20px; border-radius: 2px; font-size: .85rem; text-align: center; }
+
+    .form-submit:hover {
+      opacity: .9;
+      transform: translateY(-1px);
+    }
+
+    .form-success {
+      display: none;
+      background: color-mix(in srgb, var(--accent) 10%, transparent);
+      border: 1px solid var(--accent);
+      color: var(--accent);
+      padding: 16px 20px;
+      border-radius: 2px;
+      font-size: .85rem;
+      text-align: center;
+    }
 
     footer {
       border-top: 2px solid var(--ink);
       padding: 22px 52px;
-      display: flex; justify-content: space-between; align-items: center;
-      flex-wrap: wrap; gap: 12px;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      flex-wrap: wrap;
+      gap: 12px;
     }
-    .footer-name { font-family: 'Cormorant Garamond', serif; font-size: 1.1rem; font-weight: 600; color: var(--accent); }
-    .footer-copy { font-size: .68rem; letter-spacing: .1em; text-transform: uppercase; color: var(--muted); }
 
-    @keyframes fadeUp { from{opacity:0;transform:translateY(20px)} to{opacity:1;transform:none} }
-    @keyframes bounce { 0%,100%{transform:translateX(-50%) translateY(0)}50%{transform:translateX(-50%) translateY(8px)} }
-    @keyframes spinRing { to { transform: rotate(360deg); } }
-    @keyframes pulse { 0%,100%{opacity:1;transform:scale(1)}50%{opacity:.4;transform:scale(1.5)} }
+    .footer-name {
+      font-family: 'Cormorant Garamond', serif;
+      font-size: 1.1rem;
+      font-weight: 600;
+      color: var(--accent);
+    }
+
+    .footer-copy {
+      font-size: .68rem;
+      letter-spacing: .1em;
+      text-transform: uppercase;
+      color: var(--muted);
+    }
+
+    @keyframes fadeUp {
+      from {
+        opacity: 0;
+        transform: translateY(20px)
+      }
+
+      to {
+        opacity: 1;
+        transform: none
+      }
+    }
+
+    @keyframes bounce {
+
+      0%,
+      100% {
+        transform: translateX(-50%) translateY(0)
+      }
+
+      50% {
+        transform: translateX(-50%) translateY(8px)
+      }
+    }
+
+    @keyframes spinRing {
+      to {
+        transform: rotate(360deg);
+      }
+    }
+
+    @keyframes pulse {
+
+      0%,
+      100% {
+        opacity: 1;
+        transform: scale(1)
+      }
+
+      50% {
+        opacity: .4;
+        transform: scale(1.5)
+      }
+    }
 
     @media (prefers-reduced-motion: reduce) {
-      * { animation: none !important; transition: none !important; scroll-behavior: auto !important; }
+      * {
+        animation: none !important;
+        transition: none !important;
+        scroll-behavior: auto !important;
+      }
     }
 
-    @media (hover: none), (pointer: coarse) {
-      #cursor, #cursor-ring { display: none !important; }
-      body, .btn, .theme-toggle, .hamburger, .form-submit { cursor: auto !important; }
+    @media (hover: none),
+    (pointer: coarse) {
+
+      #cursor,
+      #cursor-ring {
+        display: none !important;
+      }
+
+      body,
+      .btn,
+      .theme-toggle,
+      .hamburger,
+      .form-submit {
+        cursor: auto !important;
+      }
     }
 
     @media (max-width: 768px) {
-      nav { padding: 16px 24px; }
-      nav.scrolled { padding: 12px 24px; }
+      nav {
+        padding: 16px 24px;
+      }
+
+      nav.scrolled {
+        padding: 12px 24px;
+      }
 
       .nav-links {
-        display: none; flex-direction: column; gap: 24px; position: fixed; inset: 0;
-        background: var(--bg); justify-content: center; align-items: center; z-index: 99;
+        display: none;
+        flex-direction: column;
+        gap: 24px;
+        position: fixed;
+        inset: 0;
+        background: var(--bg);
+        justify-content: center;
+        align-items: center;
+        z-index: 99;
       }
-      .nav-links.open { display: flex; }
-      .nav-links a { font-size: 1.1rem; }
-      .hamburger { display: flex; z-index: 101; }
+
+      .nav-links.open {
+        display: flex;
+      }
+
+      .nav-links a {
+        font-size: 1.1rem;
+      }
+
+      .hamburger {
+        display: flex;
+        z-index: 101;
+      }
 
       #hero {
         min-height: 88vh;
@@ -388,26 +1090,67 @@
         padding-bottom: 24px;
       }
 
-      .pfp-wrap { width: 120px; height: 120px; margin: 6px auto 18px; }
-      .pfp-wrap img { width: 120px; height: 120px; }
+      .pfp-wrap {
+        width: 120px;
+        height: 120px;
+        margin: 6px auto 18px;
+      }
 
-      .hero-name { font-size: clamp(2.6rem, 12vw, 4.2rem); margin-bottom: 18px; }
-      .hero-tagline { margin-bottom: 24px; }
+      .pfp-wrap img {
+        width: 120px;
+        height: 120px;
+      }
 
-      .about-grid, .projects-grid, .contact-wrapper, .form-row { grid-template-columns: 1fr; }
-      .about-grid { gap: 40px; }
-      .contact-wrapper { gap: 48px; }
+      .hero-name {
+        font-size: clamp(2.6rem, 12vw, 4.2rem);
+        margin-bottom: 18px;
+      }
 
-      footer { flex-direction: column; text-align: center; padding: 24px; }
+      .hero-tagline {
+        margin-bottom: 24px;
+      }
+
+      .about-grid,
+      .projects-grid,
+      .contact-wrapper,
+      .form-row {
+        grid-template-columns: 1fr;
+      }
+
+      .about-grid {
+        gap: 40px;
+      }
+
+      .contact-wrapper {
+        gap: 48px;
+      }
+
+      footer {
+        flex-direction: column;
+        text-align: center;
+        padding: 24px;
+      }
     }
 
     @media (max-width: 480px) {
-      section { padding: 72px 20px; }
-      .hero-cta { flex-direction: column; align-items: center; width: 100%; }
-      .btn { width: min(92vw, 320px); text-align: center; }
+      section {
+        padding: 72px 20px;
+      }
+
+      .hero-cta {
+        flex-direction: column;
+        align-items: center;
+        width: 100%;
+      }
+
+      .btn {
+        width: min(92vw, 320px);
+        text-align: center;
+      }
     }
   </style>
 </head>
+
 <body>
 
   <div id="cursor"></div>
@@ -431,13 +1174,15 @@
     <div class="hero-content">
       <div class="pfp-wrap">
         <div class="pfp-ring"></div>
-        <img src="/img/NewFaceHead.PNG" alt="Sanidhya Makasare" onerror="this.style.display='none'; this.parentElement.style.height='0';"/>
+        <img src="/img/NewFaceHead.PNG" alt="Sanidhya Makasare"
+          onerror="this.style.display='none'; this.parentElement.style.height='0';" />
       </div>
 
       <p class="hero-eyebrow">Open to Full-time .NET Roles</p>
       <h1 class="hero-name">Sanidhya<br><span>Makasare</span></h1>
       <p class="hero-role">.NET Full Stack Developer &nbsp;·&nbsp; India</p>
-      <p class="hero-tagline">I build reliable business software with clean architecture-  ASP.NET Core APIs, SQL Server data models, and Angular interfaces that teams can actually maintain.</p>
+      <p class="hero-tagline">I build reliable business software with clean architecture- ASP.NET Core APIs, SQL Server
+        data models, and Angular interfaces that teams can actually maintain.</p>
 
       <div class="hero-cta">
         <a href="#projects" class="btn btn-primary">View My Work</a>
@@ -462,19 +1207,30 @@
 
       <div class="about-grid">
         <div class="about-bio reveal">
-          <p>I’m a <strong>.NET Full Stack Developer</strong> focused on building maintainable, business-ready applications using <strong>ASP.NET Core, Entity Framework Core, SQL Server, and Angular</strong>.</p>
-          <div class="about-quote">I don’t just write blocks of codes- I design systems that teams can confidently extend.</div>
-          <p>My current work includes a custom <strong>ERP system</strong> for a real offline business, covering inventory, sales, purchase flow, and role-based access. This has strengthened my ability to translate real-world operations into structured software workflows.</p>
-          <p>With an <strong>MCA in Computer Science</strong> and a background in <strong>Mass Media & Advertising</strong>, I bring both technical depth and communication clarity — helpful when working across developers, stakeholders, and end users.</p>
+          <p>I’m a <strong>.NET Full Stack Developer</strong> focused on building maintainable, business-ready
+            applications using <strong>ASP.NET Core, Entity Framework Core, SQL Server, and Angular</strong>.</p>
+          <div class="about-quote">I don’t just write blocks of codes- I design systems that teams can confidently
+            extend.</div>
+          <p>My current work includes a custom <strong>ERP system</strong> for a real offline business, covering
+            inventory, sales, purchase flow, and role-based access. This has strengthened my ability to translate
+            real-world operations into structured software workflows.</p>
+          <p>With an <strong>MCA in Computer Science</strong> and a background in <strong>Mass Media &
+              Advertising</strong>, I bring both technical depth and communication clarity — helpful when working across
+            developers, stakeholders, and end users.</p>
         </div>
 
         <div class="about-facts reveal">
-          <div class="fact-row"><span class="fact-label">Role</span><span class="fact-value">.NET Full Stack Developer</span></div>
-          <div class="fact-row"><span class="fact-label">Education</span><span class="fact-value">MCA — Parul University<br/>BMM (Advertising) — Mumbai University</span></div>
+          <div class="fact-row"><span class="fact-label">Role</span><span class="fact-value">.NET Full Stack
+              Developer</span></div>
+          <div class="fact-row"><span class="fact-label">Education</span><span class="fact-value">MCA — Parul
+              University<br />BMM (Advertising) — Mumbai University</span></div>
           <div class="fact-row"><span class="fact-label">Location</span><span class="fact-value">India</span></div>
-          <div class="fact-row"><span class="fact-label">Building</span><span class="fact-value">Custom ERP System for a real-world offline business</span></div>
-          <div class="fact-row"><span class="fact-label">Languages</span><span class="fact-value">English · Hindi · Gujarati · Marathi · German (Elementary)</span></div>
-          <div class="fact-row"><span class="fact-label">Email</span><span class="fact-value">makasareworks@gmail.com</span></div>
+          <div class="fact-row"><span class="fact-label">Building</span><span class="fact-value">Custom ERP System for a
+              real-world offline business</span></div>
+          <div class="fact-row"><span class="fact-label">Languages</span><span class="fact-value">English · Hindi ·
+              Gujarati · Marathi · German (Elementary)</span></div>
+          <div class="fact-row"><span class="fact-label">Email</span><span
+              class="fact-value">makasareworks@gmail.com</span></div>
         </div>
       </div>
     </div>
@@ -493,7 +1249,8 @@
           <div class="skill-card-title">Backend Development</div>
           <div class="skill-chips">
             <span class="s-chip">C#</span><span class="s-chip">ASP.NET Core</span><span class="s-chip">EF Core</span>
-            <span class="s-chip">RESTful APIs</span><span class="s-chip">LINQ</span><span class="s-chip">Dependency Injection</span>
+            <span class="s-chip">RESTful APIs</span><span class="s-chip">LINQ</span><span class="s-chip">Dependency
+              Injection</span>
             <span class="s-chip">Repository Pattern</span><span class="s-chip">Swagger</span>
           </div>
         </div>
@@ -527,9 +1284,12 @@
 
       <div class="arch-box reveal">
         <div class="arch-flow">
-          <div class="arch-node">Controller</div><div class="arch-arrow">→</div>
-          <div class="arch-node">Service</div><div class="arch-arrow">→</div>
-          <div class="arch-node">Repository</div><div class="arch-arrow">→</div>
+          <div class="arch-node">Controller</div>
+          <div class="arch-arrow">→</div>
+          <div class="arch-node">Service</div>
+          <div class="arch-arrow">→</div>
+          <div class="arch-node">Repository</div>
+          <div class="arch-arrow">→</div>
           <div class="arch-node">Database</div>
         </div>
         <p class="arch-desc">Clean layers. Testable code. No spaghetti.</p>
@@ -549,7 +1309,8 @@
         <div class="project-card reveal">
           <div class="project-status"><span class="status-dot"></span> Completed</div>
           <h3 class="project-title">Employee Admin Portal</h3>
-          <p class="project-desc">A clean, production-style ASP.NET Core Web API for employee and admin management, built with layered architecture for maintainability and smooth handoff.</p>
+          <p class="project-desc">A clean, production-style ASP.NET Core Web API for employee and admin management,
+            built with layered architecture for maintainability and smooth handoff.</p>
           <ul class="project-highlights">
             <li>Implemented complete CRUD flows using Entity Framework Core</li>
             <li>Applied Controller → Service → Repository structure with Dependency Injection</li>
@@ -558,7 +1319,8 @@
             <li>Designed to be readable, test-friendly, and easy for teams to extend</li>
           </ul>
           <div class="project-stack">
-            <span class="stack-tag">C#</span><span class="stack-tag">ASP.NET Core</span><span class="stack-tag">EF Core</span>
+            <span class="stack-tag">C#</span><span class="stack-tag">ASP.NET Core</span><span class="stack-tag">EF
+              Core</span>
             <span class="stack-tag">SQL Server</span><span class="stack-tag">Swagger</span>
           </div>
           <a href="https://github.com/smogder/WebAPI-ASP.Net" target="_blank" class="project-link">View on GitHub →</a>
@@ -567,7 +1329,8 @@
         <div class="project-card reveal">
           <div class="project-status"><span class="status-dot pulse"></span> In Progress</div>
           <h3 class="project-title">ERP System</h3>
-          <p class="project-desc">A real-world ERP platform in active development for an offline business, focused on operational accuracy, role-based control, and long-term scalability.</p>
+          <p class="project-desc">A real-world ERP platform in active development for an offline business, focused on
+            operational accuracy, role-based control, and long-term scalability.</p>
           <ul class="project-highlights">
             <li>Mapped real business operations into structured digital workflows</li>
             <li>Built inventory lifecycle tracking: purchase, sale, adjustment, and damage</li>
@@ -576,8 +1339,10 @@
             <li>Developing Angular UI for practical use by non-technical staff</li>
           </ul>
           <div class="project-stack">
-            <span class="stack-tag">C#</span><span class="stack-tag">ASP.NET Core</span><span class="stack-tag">Angular</span>
-            <span class="stack-tag">EF Core</span><span class="stack-tag">SQL Server</span><span class="stack-tag">RBAC</span>
+            <span class="stack-tag">C#</span><span class="stack-tag">ASP.NET Core</span><span
+              class="stack-tag">Angular</span>
+            <span class="stack-tag">EF Core</span><span class="stack-tag">SQL Server</span><span
+              class="stack-tag">RBAC</span>
           </div>
           <a href="https://github.com/smogder" target="_blank" class="project-link">View on GitHub →</a>
         </div>
@@ -596,21 +1361,32 @@
       <div class="contact-wrapper">
         <div class="contact-info reveal">
           <h3>Let’s build something meaningful.</h3>
-          <p>I’m currently looking for .NET Full Stack opportunities where I can contribute to real products, grow with strong engineers, and take ownership of clean, reliable software delivery.</p>
+          <p>I’m currently looking for .NET Full Stack opportunities where I can contribute to real products, grow with
+            strong engineers, and take ownership of clean, reliable software delivery.</p>
           <div class="contact-links">
-            <a href="mailto:makasareworks@gmail.com" class="contact-link"><div class="contact-link-icon">✉</div>makasareworks@gmail.com</a>
-            <a href="https://www.linkedin.com/in/sanidhya-makasare" target="_blank" class="contact-link"><div class="contact-link-icon">in</div>linkedin.com/in/sanidhya-makasare</a>
-            <a href="https://github.com/smogder" target="_blank" class="contact-link"><div class="contact-link-icon">⌥</div>github.com/smogder</a>
-            <a href="https://smogder.github.io/cover-letter" target="_blank" class="contact-link"><div class="contact-link-icon">↗</div>View Cover Letter</a>
+            <a href="mailto:makasareworks@gmail.com" class="contact-link">
+              <div class="contact-link-icon">✉</div>makasareworks@gmail.com
+            </a>
+            <a href="https://www.linkedin.com/in/sanidhya-makasare" target="_blank" class="contact-link">
+              <div class="contact-link-icon">in</div>linkedin.com/in/sanidhya-makasare
+            </a>
+            <a href="https://github.com/smogder" target="_blank" class="contact-link">
+              <div class="contact-link-icon">⌥</div>github.com/smogder
+            </a>
+            <a href="https://smogder.github.io/cover-letter" target="_blank" class="contact-link">
+              <div class="contact-link-icon">↗</div>View Cover Letter
+            </a>
           </div>
         </div>
 
         <form class="contact-form reveal" id="contactForm" onsubmit="handleSubmit(event)">
           <div class="form-row">
-            <div class="form-group"><label>Your Name *</label><input type="text" placeholder="John Smith" required /></div>
+            <div class="form-group"><label>Your Name *</label><input type="text" placeholder="John Smith" required />
+            </div>
             <div class="form-group"><label>Company</label><input type="text" placeholder="Acme Corp" /></div>
           </div>
-          <div class="form-group"><label>Email *</label><input type="email" placeholder="john@company.com" required /></div>
+          <div class="form-group"><label>Email *</label><input type="email" placeholder="john@company.com" required />
+          </div>
           <div class="form-group">
             <label>I'm reaching out about</label>
             <select>
@@ -621,7 +1397,8 @@
               <option>Other</option>
             </select>
           </div>
-          <div class="form-group"><label>Message *</label><textarea rows="5" placeholder="Tell me about the role or project..." required></textarea></div>
+          <div class="form-group"><label>Message *</label><textarea rows="5"
+              placeholder="Tell me about the role or project..." required></textarea></div>
           <button type="submit" class="form-submit">Send Message →</button>
           <div class="form-success" id="formSuccess">Message sent! I'll get back to you soon.</div>
         </form>
@@ -712,4 +1489,5 @@
     }
   </script>
 </body>
+
 </html>
